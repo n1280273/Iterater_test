@@ -1,0 +1,16 @@
+public class IteratorTest{
+    public static void main(String[] args)
+    GameListAggregate GameListAggregate = new GameListAggregate();
+    Iterator iterator = GameListAggregate.createIterator();
+    gameListAggregate.add(new Game("ZWIFT",));
+     gameListAggregate.add(new Game("卓球",));
+      gameListAggregate.add(new Game("モンスト",));
+       gameListAggregate.add(new Game("パズドラ",));
+
+       iterator.first();//まず探す場所を戦闘位置にしてもらう
+       while(! iterator.isDone()){//まだある？
+        Game game = (Game)iterator.getItem();
+        System.out.printIn{game.getName());
+                   iterator.next();//次
+        }}
+}

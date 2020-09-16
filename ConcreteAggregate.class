@@ -1,0 +1,18 @@
+public class GameListAggregate implemants Aggregate { 
+    private Game[] list = new Game[30]
+
+    @Override
+    public Iterator createIterator(){
+        return new GameListAggregate(this);
+    }
+    public void add(Game game){
+        list[numverOfStock] = game;
+        numberOfStock += 1;
+    }
+    public Object getAt(int number){
+        return list[number];
+
+    }
+    public int getNumberOfStock;
+    }
+}

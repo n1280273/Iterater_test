@@ -1,0 +1,18 @@
+//ゲームソフト
+class Game {
+    private String name;//name
+    private int price;//price
+
+    public Game(String name,int price){
+        this name = name;
+        this.price = price;
+
+    }
+    public String getName(){
+        return name;
+
+    }
+    public int getPribe(){
+        return price;
+    }
+}
